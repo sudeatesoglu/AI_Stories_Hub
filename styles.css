@@ -1,0 +1,97 @@
+/* Add styles for image containers */
+.image-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Add styles for image titles */
+.image-cover {
+    max-width: 200px; /* Adjust maximum width as needed */
+    height: auto;
+    cursor: pointer;
+}
+
+/* Add styles for image titles */
+.image-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center the entire content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Style menu items */
+.menu {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.menu h2 {
+    margin-bottom: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Content area */
+.content {
+    padding: 20px;
+    max-width: 800px; /* Adjust max-width as needed */
+}
+
+/* Animation for image covers */
+.image-cover {
+    transition: transform 0.3s ease;
+}
+
+/* Image cover hover effect */
+.image-cover:hover {
+    transform: scale(1.05);
+}
+
+/* Add styles for image titles */
+.image-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+/* Adjust the position of image cover */
+.image-cover {
+    position: relative;
+}
