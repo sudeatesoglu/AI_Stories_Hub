@@ -1,18 +1,15 @@
-/* Add styles for image containers */
 .image-container {
     position: relative;
     display: inline-block;
     margin: 10px;
 }
 
-/* Add styles for image titles */
 .image-cover {
-    max-width: 200px; /* Adjust maximum width as needed */
+    max-width: 235px;
     height: auto;
     cursor: pointer;
 }
 
-/* Add styles for image titles */
 .image-title {
     position: absolute;
     top: 0;
@@ -20,16 +17,16 @@
     background-color: rgba(255, 255, 255, 0.7);
     padding: 5px;
     font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
-/* Basic styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Center the entire content */
 .container {
     display: flex;
     justify-content: center;
@@ -37,10 +34,9 @@ body {
     min-height: 100vh;
 }
 
-/* Style menu items */
 .menu {
     background-color: #f4f4f4;
-    padding: 20px;
+    padding: 30px;
 }
 
 .menu h2 {
@@ -63,23 +59,19 @@ body {
     font-weight: bold;
 }
 
-/* Content area */
 .content {
     padding: 20px;
-    max-width: 800px; /* Adjust max-width as needed */
+    max-width: 800px;
 }
 
-/* Animation for image covers */
 .image-cover {
     transition: transform 0.3s ease;
 }
 
-/* Image cover hover effect */
 .image-cover:hover {
     transform: scale(1.05);
 }
 
-/* Add styles for image titles */
 .image-title {
     position: absolute;
     top: 0;
@@ -91,7 +83,6 @@ body {
     text-align: center;
 }
 
-/* Adjust the position of image cover */
 .image-cover {
     position: relative;
 }

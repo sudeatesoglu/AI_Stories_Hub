@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to fetch story content from text files
     async function fetchStoryContent(title) {
         try {
             const response = await fetch(`stories/${title}.txt`);
@@ -11,13 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to display story content
     async function displayStory(title) {
         const storyContent = await fetchStoryContent(title);
         document.getElementById("story-content").innerHTML = `<h2>${title.replace(/_/g, " ")}</h2><p>${storyContent}</p>`;
     }
 
-    // Function to populate image covers and titles
     async function populateImageCoversAndTitles() {
         try {
             const response = await fetch("image_filenames.txt");
@@ -28,10 +25,17 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (filename.trim() !== "") {
                     const title = filename.split(".")[0];
                     
-                    // Create image container
                     const imgContainer = document.createElement("div");
                     imgContainer.classList.add("image-container");
-                    imgContainer.setAttribute("data-title", title.replace(/_/g, " ")); // Add data-title attribute
+                    imgContainer.setAttribute("data-title", title.replace(/_/g, " "));
+                    
+                    // Create title element
+                    const titleElement = document.createElement("div");
+                    titleElement.classList.add("image-title");
+                    titleElement.innerText = title.replace(/_/g, " ");
+                    imgContainer.appendChild(titleElement);
+                    
+                    // Create image element
                     const img = document.createElement("img");
                     img.src = `images/${filename.trim()}`;
                     img.alt = title;
@@ -43,13 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     imgContainer.appendChild(img);
                     imageContainer.appendChild(imgContainer);
 
-                    // Add title element
-                    const titleElement = document.createElement("div");
-                    titleElement.classList.add("image-title");
-                    titleElement.innerText = title.replace(/_/g, " ");
-                    imgContainer.appendChild(titleElement);
-
-                    // Add title to the stories list
+                    // Create list item for stories list
                     const listItem = document.createElement("li");
                     const storyLink = document.createElement("a");
                     storyLink.href = "#";
@@ -67,6 +65,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Populate image covers and titles
     populateImageCoversAndTitles();
 });
