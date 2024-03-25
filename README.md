@@ -1,6 +1,8 @@
 # AI Stories Hub
 
 ## Description
+
+
 This project was created as a final project for completing the Aygaz GenAI Bootcamp. The main goal of the project was to demonstrate prompt engineering skills by generating AI-generated stories based on given AI-generated image covers.
 The project utilizes JavaScript for fetching story content, populating image covers, and handling user interactions. Additionally, CSS is used for styling the layout of the webpage.
 
@@ -10,7 +12,6 @@ The project utilizes JavaScript for fetching story content, populating image cov
 - Clickable image covers to view related stories.
 - Dynamic population of image covers and titles.
 - Responsive design for optimal viewing on various devices.
-- User-friendly menu with options for Stories, About us, and Contact.
   
 ## File Structure
 
