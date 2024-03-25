@@ -32,3 +32,8 @@ Images and the stories should be in the center and smaller.
 When the user clicks on the image, their story will open right next to the images.
 When clicking the stories in the menu, titles should be listed under stories.
 Do not comment the code.
+
+
+Provide me a README file. 
+Keep in mind that this was a final project for completing Aygaz GenAI Bootcamp.
+Project was based on prompt engineering.
